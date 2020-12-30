@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react'
+import Login from './Login_api'
+import Login2 from './Login_email'
+import './App.css'
+import {Button, Form, FormGroup, Label, Input }from 'reactstrap'
+//import {FacebookLogingButton} from 'react-loging-buttons';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Form className='App'>
+     <h1>
+     <span className="font-weight-bold">Log in</span>
+     </h1>
+     <Login /> 
+     <Login2 />
+    </Form>
+  )
 }
 
-export default App;
+export default App
