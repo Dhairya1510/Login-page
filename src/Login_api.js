@@ -1,7 +1,7 @@
 import React from 'react';
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
-import { FacebookLoginButton } from "react-social-login-buttons";
+//import { FacebookLoginButton } from "react-social-login-buttons";
 import './index.css'
 
 
@@ -31,7 +31,7 @@ const Login = () => {
   <span className='p-3'></span>
   <FacebookLogin
     appId="220764742961371"
-    autoLoad={true}
+    autoLoad={false}
     fields="name,email,picture"
     callback={responseFacebook}
     icon="fa-facebook"

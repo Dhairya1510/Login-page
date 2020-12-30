@@ -16,6 +16,8 @@ const ControlledInputs = () => {
       });
       setPassword('');
       setEmail('');
+         console.log(people)   
+
     } else {
       console.log('empty values');
     }
@@ -36,7 +38,7 @@ const ControlledInputs = () => {
               className="form-control ma"
             />
 
-            <dib className="col-lg-3"></dib>
+            <span className="col-lg-3"></span>
 
           </div>
             <input
@@ -49,12 +51,13 @@ const ControlledInputs = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
 
-            <dib className="col-lg-3"></dib>
+            <span className="col-lg-3"></span>
 
           <button className='btn-lg btn-success btn-block ' type='submit'>Login</button>
 
-          <dib className="col-lg-3"></dib>
+          <span className="col-lg-3"></span>
           
+
           <div className='text-center'>
              <a href="/forgot-password">forgot your password?</a>
             <span className="p-2"> </span>
